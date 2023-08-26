@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <style>
+    body {
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      background-color: CYAN;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    header {
+      background: green;
+      display: flex;
+      align-items: center;
+      padding: 15px 0;
+      position: -webkit-sticky;
+      /* Safari */
+      position: sticky;
+      top: 20px;
+    }
+
+    header ul {
+      list-style: none;
+      display: flex;
+      padding: 0;
+      margin: 0;
+    }
+
+    header a {
+      color: black
+    }
+
+    #logo {
+      margin: auto;
+      font-size: 25px;
+      font-weight: 600;
+    }
+
+    #men li {
+      padding: 10px
+    }
+
+    #link li {
+      padding: 10px
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+
+
+
+
+    }
+
+    ul li {
+      display: block;
+      position: relative;
+      float: left;
+    }
+
+    li ul {
+      display: none;
+    }
+
+    ul li a,
+    #logo {
+      display: block;
+      padding: 1em;
+      text-decoration: none;
+      white-space: nowrap;
+      color: #fff;
+    }
+
+    li:hover>ul {
+      display: block;
+      position: absolute;
+    }
+
+    li:hover li {
+      float: none;
+    }
+
+    li:hover a {
+      background: burlywood;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+    }
+
+    ul li {
+      display: block;
+      position: relative;
+      float: left;
+    }
+
+    li ul {
+      display: none;
+    }
+
+    ul li a {
+      display: block;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+
+
+    li:hover>ul {
+      display: block;
+      position: absolute;
+    }
+
+    li:hover li {
+      float: none;
+    }
+
+    .main-navigation li ul li {
+      border-top: 0;
+    }
+
+    ul ul ul {
+      left: 100%;
+      top: 0;
+    }
+
+    ul:before,
+    ul:after {
+      content: " ";
+      /* 1 */
+      display: table;
+      /* 2 */
+    }
+
+    ul:after {
+      clear: both;
+    }
+    p {
+      text-align: justify;
+      border: 2px double blue;
+      font-size: 16px;
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+      padding: 20px 20px;
+      margin: 50px 15px;
+    }
+    .search{
+    width: 330px;
+    float: left;
+    margin-left: 300px;
+   margin-top: 50px;
+   display: flex;
+}
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav id="men">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Assigments</a>
+          <ul>
+            <li> <a href="#">HTML</a>
+              <ul>
+                <li><a href="Assignment1/Assignment1.html" target="_blank">Assignment 01</a></li>
+
+
+                <li><a href="Assignment2/Assignment2.html" target="_blank">Assignment 02</a></li>
+
+                <li><a href="Assignment3/List1.html" target="_blank">Assignment 03</a></li>
+              </ul>
+            </li>
+            <li><a href="#">CSS</a>
+              <ul>
+                <li><a href="CSS1/index.html" target="_blank">Assignment 1</a></li>
+                <li><a href="CSS2/index.html" target="_blank">Assignment 2</a></li>
+                <li><a href="CSS 03- 04/Form1.html" target="_blank">Form 3 </a></li>
+                <li><a href="CSS 03- 04/Form2.html" target="_blank">Form 4 </a></li>
+                <li><a href="CSS 05/web-layout.html" target="_blank">web-layout! </a></li>
+                <li><a href="./CSS 06/unionsteels.html" target="_blank">unionsteels</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+    <div class="search">
+      <input class="srch" type="search" name="" placeholder="Type To text">
+      <a href="#"> <button class="btn">Search</button></a>
+  </div>
+    <div id="logo">Muhammad Bilal</div>
+    <nav id="link">
+      <ul>
+        <li>
+          <a href="https://www.facebook.com/bilalraza.mughal.16"> <ion-icon name="logo-facebook"></ion-icon></a>
+        </li>
+        <li>
+          <a href="https://github.com/Bilal2558"><ion-icon name="logo-github"></ion-icon></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis vero, ea, corrupti expedita nostrum error omnis
+    molestiae dignissimos quos quis facilis deserunt atque quibusdam, ex architecto suscipit perspiciatis minus
+    inventore.
+    Sapiente corporis officiis in maxime commodi omnis voluptatem corrupti, accusantium sed, cum minima eaque. Facere
+    nisi hic eligendi cupiditate quisquam corrupti tempora, quam eos quibusdam modi fuga rem ducimus neque.
+    Aliquam qui quis delectus laborum, error quibusdam dolorum obcaecati enim hic illum eaque magni, exercitationem ad
+    sit quasi ab suscipit voluptates explicabo, dolores pariatur animi rerum. Animi sint dolores quasi.
+    Inventore eveniet vero illo quae adipisci nisi harum iste aliquid soluta ipsa, quas ullam deleniti dolorum eaque nam
+    laudantium asperiores animi corporis consequuntur, eos sint natus doloremque? Ullam, atque iure!
+    Autem, veniam velit tempora, esse doloribus quo corrupti eveniet sint, maiores error est perferendis! Magnam beatae
+    consequatur, minima, sunt odio eos, voluptates accusamus aspernatur culpa veritatis tenetur quam! Quaerat,
+    explicabo.
+    Magni autem perspiciatis eum accusantium, quam fugiat nesciunt sed ut voluptatibus voluptate quis sapiente adipisci
+    laborum ab eaque ipsa odit quos reprehenderit libero? Animi esse iste, dolore architecto a doloremque!
+    Saepe et vero nesciunt necessitatibus, hic praesentium suscipit magnam aperiam maxime, in fugit, provident eum quam
+    explicabo repellat culpa optio veniam. Reiciendis nostrum corporis magnam error molestias omnis mollitia cumque.
+    Officiis accusantium unde cum libero fugiat repudiandae dignissimos doloribus provident in nobis, quos iste
+    perspiciatis a quas vero. Delectus expedita quod ullam, perspiciatis voluptate pariatur aut animi facere. Quidem,
+    doloribus.
+    Qui, quidem. Dicta culpa natus assumenda repellat dignissimos ipsam tempora ab! Sed pariatur iure doloribus
+    voluptatum qui consequatur quasi excepturi similique? Praesentium sunt dolor officia adipisci esse debitis
+    repudiandae fugit?
+    Unde, repudiandae nesciunt. Tempore laudantium odit odio ea. Sit impedit, accusamus nobis delectus eligendi
+    voluptatem alias sunt quod vitae nihil necessitatibus temporibus. Id cupiditate asperiores hic. Minima quae
+    accusamus totam.
+    Saepe commodi praesentium fuga doloribus consequuntur dolores libero minima, facere cumque atque. Temporibus sed
+    architecto eligendi praesentium unde saepe molestiae, nesciunt accusamus tempore dolor doloremque omnis rem delectus
+    itaque hic.
+    Laborum eligendi corrupti optio, alias, eius accusamus voluptatibus, tenetur tempora facere asperiores libero
+    dolorum ea quos provident odit. Laborum porro quae animi ullam consectetur quibusdam voluptatum quam odit
+    voluptatibus sit.
+    Beatae nobis neque iure obcaecati ea vitae, voluptatibus quas, deleniti qui incidunt est doloremque facere maiores
+    nulla iste accusantium odit temporibus cupiditate aut dolorem! A odit similique rem fugit nam?
+    Velit ipsum reiciendis a quod laudantium suscipit fuga. Laborum cupiditate, explicabo eaque officiis sapiente
+    dolores! Harum aliquam cum nobis non at praesentium ipsa repellat quos! Odio nulla quibusdam quo commodi!
+    Vitae in, alias possimus optio eius dignissimos commodi ea odit quod exercitationem excepturi fuga explicabo non!
+    Temporibus reiciendis blanditiis, ad doloribus, nostrum recusandae veniam quasi odio, sint assumenda doloremque
+    animi!
+    Cupiditate soluta consequatur quia hic natus. Odit quasi enim pariatur explicabo optio. Facere similique explicabo
+    sed in excepturi exercitationem reiciendis numquam quaerat minus, dignissimos dolorem itaque tempore! Id, voluptatum
+    explicabo.
+    </p>
+</body>
+
+</html>
