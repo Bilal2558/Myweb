@@ -1,0 +1,30 @@
+* {
+    
+    margin: 5px;
+    
+}
+div {border-style: solid;
+    width: 700px;
+    height: 800;
+    margin: 0px auto;
+
+}
+hr {
+    margin: 0;
+}
+div>h1{
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+}
+div>h3 {
+   
+border: bisque;
+}
+ul {
+    list-style-type: &#128349;
+  }
+  
+h4 {
+    background-color: aqua;
+}  

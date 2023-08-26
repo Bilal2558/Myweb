@@ -1,0 +1,180 @@
+:root {
+    --white-shade-color: rgba(255, 255, 255, 0.15);
+    --black-shade-color: rgba(0, 0, 0, 0.15);
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  html {
+    font-size: 62.5%;
+  }
+  body {
+    background-color: #e9ebf7;
+    font-size: 1.4rem;
+    font-family: sans-serif;
+    color: #ffffff;
+  }
+  .nav {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 1rem;
+    white-space: nowrap;
+    overflow: auto;
+  }
+  .nav--green {
+    background: #009788;
+  }
+  .nav--mehron {
+    background: #890e4f;
+  }
+  .nav--cyan {
+    background: #00bcd5;
+  }
+  .nav--pink {
+    background: #aa47bc;
+  }
+  .nav--purple {
+    background: #3f51b5;
+  }
+  .nav--light-pink {
+    background: #f9bbd0;
+    color: black;
+  }
+  .nav--red {
+    background: #d32f2e;
+  }
+  .nav--dark-gray {
+    background: #1c2431;
+  }
+  menu {
+    padding: 0;
+    margin: 0;
+  }
+  .left-menu {
+    list-style-type: none;
+  }
+  .left-menu-item,
+  .nav__title {
+    display: inline-block;
+    padding: 1rem 0.8rem 0.8rem 0.8rem;
+    line-height: 1.8rem;
+  }
+  .left-menu-item:hover {
+    background-color: var(--white-shade-color);
+    cursor: pointer;
+  }
+  .nav__title {
+    font-weight: 600;
+    transition: scale 0.3s;
+  }
+  .nav__title:hover {
+    scale: 1.2;
+    cursor: default;
+  }
+  .right-menu__input {
+    outline: 0;
+    margin-top: 1rem;
+    line-height: 2rem;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: #ffffff;
+    background: transparent;
+    caret-color: #ffffff;
+  }
+  .right-menu__input::placeholder {
+    color: #ffffff;
+  }
+  .icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  .icon:hover {
+    background-color: var(--white-shade-color);
+    cursor: pointer;
+  }
+  .icon--twitter {
+    background-image: url(../images/twitter.svg);
+    background-size: 15px 15px;
+  }
+  .icon--google-plus {
+    background-image: url(../images/google_plus.svg);
+    background-size: 20px 20px;
+  }
+  .icon--person-with-sort-down {
+    background-image: url(../images/person-with-sort-down.svg);
+    background-size: 30px 15px;
+    padding-right: 40px;
+  }
+  .span-with-icon {
+    background-position: 0.5rem 50%;
+    background-size: 15px;
+    background-repeat: no-repeat;
+    padding: 0.8rem 0.8rem 0.8rem 2.5rem;
+    display: inline-block;
+  }
+  .span-with-icon:hover {
+    background-color: var(--white-shade-color);
+  
+    cursor: pointer;
+  }
+  .span-with-icon.contact {
+    background-image: url(../images/contact.svg);
+  }
+  .span-with-icon.settings {
+    background-image: url(../images/setting.svg);
+  }
+  .span-with-icon.profile {
+    background-image: url(../images/person.svg);
+  }
+  .icon.icon--message {
+    background-image: url(../images/contact.svg);
+    background-size: 15px 15px;
+    background-position: 70% 55%;
+    padding: 0.8rem 3.2rem 0.8rem 0.5rem;
+  }
+  .icon.icon--search {
+    background-image: url(../images/search.svg);
+    background-size: 15px 15px;
+    width: 25px;
+    height: 25px;
+    vertical-align: bottom;
+    border-radius: 100%;
+  }
+  .nav--light-pink .icon:hover,
+  .nav--light-pink .left-menu-item:hover {
+    background-color: var(--black-shade-color);
+  }
+  .nav--light-pink .right-menu__input {
+    caret-color: black;
+    border-color: black;
+  }
+  .nav--light-pink .right-menu__input::placeholder {
+    color: black;
+  }
+  .left-menu-item.search {
+    border: 2px solid #ffffff;
+    padding: 0;
+    font-size: 1rem;
+    padding: 0.4rem 1.8rem;
+    margin-left: 1rem;
+  }
+  .span-with-icon.follow {
+    background-image: url(../images/heart.svg);
+  }
+  .span-with-icon.collaboration {
+    background-image: url(../images/like.svg);
+  }
+  .span-with-icon.media {
+    background-image: url(../images/card.svg);
+  }

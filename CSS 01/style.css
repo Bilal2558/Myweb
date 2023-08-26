@@ -1,0 +1,34 @@
+
+body {
+  box-sizing: border-box;
+  background-color: aqua;
+  table-layout: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: 2em;
+  text-align: justify;
+  text-align: center;
+
+}
+
+table, th, td {
+  border: 2px double black;
+ 
+}
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+table.two {
+  table-layout: fixed;
+  width: 100%;
+  font-size: 20px;
+  text-align: justify;
+}
+a {
+  text-decoration: none;
+}
+hr {
+  border: 10px solid blueviolet;
+  border-radius: 5px;
+}

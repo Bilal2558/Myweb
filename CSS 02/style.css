@@ -1,0 +1,61 @@
+.border {
+  max-width: 940px;
+  min-width: 720px;
+  margin: 10px auto 10px auto;
+  padding: 20px;
+  border: 4px double #000;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+}
+
+/* unvisited link */
+a:link {
+  color: LIGHT BLUE;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  font-size: 20px;
+  font-weight: bold;
+  color: hotpink;
+
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
+input:focus {
+  background-color: gold;
+}
+
+ul {
+  width: 570px;
+  padding: 15px;
+  margin: 0px auto 0px auto;
+  border-top: 2px solid #000;
+  border-bottom: 1px solid #000;
+  text-align: center;
+}
+
+li {
+  display: inline;
+  margin: 0px 5px;
+  font-family: ;
+}
+
+p {
+  text-align: center;
+  width: 600px;
+  margin: 20px auto 20px auto;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: normal;
+}

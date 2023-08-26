@@ -1,0 +1,11 @@
+table {
+  font-weight: bold;
+   
+  background-color: slateblue;
+  color: white;
+}
+table.two {
+  border: 1px solid;
+  border-color: black;
+ 
+}
