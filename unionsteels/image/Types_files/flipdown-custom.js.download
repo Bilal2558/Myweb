@@ -1,0 +1,37 @@
+document.addEventListener('DOMContentLoaded', () => {
+
+    var endDate = new Date("Feb 02, 2021 08:00:00").getTime();
+    var curDate = new Date().getTime();
+    var timeDifference = endDate - curDate;
+    ninehours = (new Date().getTime()/1000) + (timeDifference/1000);
+    document.getElementById("start-end").innerHTML = "STARTS";
+
+    // Set up FlipDown
+    var flipdown = new FlipDown(ninehours,{
+        theme: "light",
+        headings: ["DAYS", "HRS", "MINS", "SECS"],
+    })
+    // Start the countdown
+    .start()
+    // Do something when the countdown ends
+    .ifEnded(() => {
+            
+            var endDate2 = new Date("Feb 02, 2021 17:00:00").getTime();
+            var curDate2 = new Date().getTime();
+            var timeDifference2 = endDate2 - curDate2;
+            ninehours2 = (new Date().getTime()/1000) + (timeDifference2/1000);
+            document.getElementById("flipdown").style.display = "none";
+            document.getElementById("flipdown2").style.display = "flex";
+            document.getElementById("start-end").innerHTML = "ENDS";
+            var flipdown = new FlipDown2(ninehours2,{
+                theme: "light",
+                
+            })
+            // Start the countdown
+            .start()
+            // Do something when the countdown ends
+            .ifEnded(() => {
+                console.log("Countdown has ended");
+            });
+        })
+    });

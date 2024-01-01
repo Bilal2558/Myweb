@@ -1,0 +1,5 @@
+.aux-float-layout .aux-end {color: #262626 !important}
+
+.aux-site-footer small a {color: #FFA600 !important}
+
+.aux-site-footer .footer-menu li.current-menu-item a {color: #fff !important}

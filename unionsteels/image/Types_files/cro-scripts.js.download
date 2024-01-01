@@ -1,0 +1,122 @@
+/* THIS IS A JS SOURCE CODE WILL MONITOR THE DISPLAY OF THE CRO FROM THE WEBSITE */
+var cro = (function() {
+
+    function getCookie(cookiename) {
+        var name = cookiename + "=";
+        var decodedCookie = decodeURIComponent(document.cookie);
+        var cookie_array = decodedCookie.split(';');
+    
+        for(var ctr = 0; ctr < cookie_array.length; ctr++) {
+            var cookie = cookie_array[ctr];
+            while (cookie.charAt(0) == ' ') {
+                cookie = cookie.substring(1);
+            }
+            if (cookie.indexOf(name) == 0) {
+                return cookie.substring(name.length, cookie.length);
+            }
+        }
+        return "";
+    }
+
+
+    function addCookie(name, value, expiration) {
+        var now = new Date();
+        var time  = now.getTime();
+        time = time + expiration * 1000;
+        now.setTime(time);
+        document.cookie = ""+ name +"="+ value +"; expires="+ now.toUTCString(); +" path=/";           
+    }
+    
+
+
+    function watchEvents(data) {
+        document.querySelector(data.elementToWatch).addEventListener(data.eventToWatch, function() {
+            addCookie(data.cookieName, data.cookieValue, data.cookieExpiration);
+        });
+    }   
+
+
+    function checkCookie(data) {
+        var currentCookieValue = getCookie(data.cookieName);
+
+        if(data.addCookie === true) {
+            if(currentCookieValue !== data.cookieValue) {
+                data.customFunction();
+                watchEvents(data);         
+            }   
+        } else {
+            data.customFunction();
+        }
+        
+    }    
+
+
+    return {
+        run: function(data) {
+            
+            // CHECK IF HAVE A CUSTOM FUNCTION
+            if(typeof(data.customFunction) !== 'function') {
+                return alert('Please set your custom function');
+            }
+
+
+            //  CHECK IF IT IS IN DEV MODE 
+            if(data.devMode === true) {
+                data.customFunction();
+            } else {
+                checkCookie(data);
+            }
+        
+        },
+        croAddCookie: function (name, value, expiration) {
+            addCookie(name, value, expiration);
+        }
+    }
+
+})();
+
+
+/* DO NOT DELETE THIS ONE */
+
+cro.run({
+    devMode: false,  
+    addCookie: false, // false
+    elementToWatch: '.reganCRO_submit-btn', 
+    eventToWatch: 'click', 
+    cookieName: 'CRO_REGAN_POP_UP', 
+    cookieValue: 'showed',
+    cookieExpiration: 86400, 
+    customFunction: function () {
+        jQuery(document).ready(function(){
+            jQuery( ".croSection" ).show();
+            //jQuery( ".croBtn" ).click();
+        });
+    }
+});
+
+jQuery(document).ready(function () {
+    //if cookie hasn't been set...
+    if (document.cookie.indexOf("ModalShown=true")<0) {
+        jQuery(document).ready(function() {
+            if(jQuery('.croBtn')[0]) {
+                setTimeout(function(){
+                    jQuery('.croBtn').click();
+                }, 25000);
+            }
+            jQuery(".sticky-right-cro").css("display", "block");
+            
+        });
+        var date = new Date(),
+            expires = 'expires=';
+
+        date.setDate(date.getDate() + 1);
+        expires += date.toGMTString();
+        document.cookie = 'ModalShown=true ;' + expires + '; path=/';
+        
+    }
+    else {
+
+    jQuery("#croModalContent").css("display", "none");
+    jQuery(".sticky-right-cro").css("display", "none");
+    }
+});

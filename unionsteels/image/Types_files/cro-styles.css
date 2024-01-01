@@ -1,0 +1,513 @@
+.rgncro-modal .modal-dialog {
+    margin-top: 200px;
+    max-width: 900px;
+}
+
+.rgncro-modal__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #a1102b;
+}
+
+.rgncro-modal__div {
+    flex: 0 0 50%;
+}
+
+.rgncro-modal__img {
+    clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%);
+}
+
+.rgncro-modal__div--form {
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px 0 30px;
+    font-family: var(--font-header);
+}
+
+.rgncro-modal__title {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.4;
+    color: #fff;
+}
+
+.rgncro-modal__div--form input[type="text"],
+.rgncro-modal__div--form input[type="email"] {
+    padding: 10px 15px;
+    margin: 10px 0 0;
+    border: 0;
+    border-radius: 0;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.rgncro-modal__div--form input::-webkit-input-placeholder {
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 14px;
+}
+
+.rgncro-modal__div--form button.submit {
+    width: 100%;
+    margin-top: 20px;
+    color: #fff;
+    background-color: #ebe007;
+    border: 1px solid #ebe007;
+    outline: 0;
+    transition: all 0.4s;
+}
+
+.rgncro-modal__div--form button.submit:hover,
+.rgncro-modal__div--form button.submit:active,
+.rgncro-modal__div--form button.submit:focus {
+    color: #ebe007;
+    background-color: transparent;
+}
+
+.rgncro-modal__link:link,
+.rgncro-modal__link:visited {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: rgba(255, 255, 255, 0.2);
+}
+
+@media only screen and (max-width: 991px) {
+    .rgncro-modal {
+        padding: 0 30px;
+    }
+    .rgncro-modal .modal-dialog {
+        max-width: 500px;
+    }
+    .rgncro-modal__content {
+        flex-direction: column-reverse;
+    }
+    .rgncro-modal__div {
+        width: 100%;
+    }
+    .rgncro-modal__div--form {
+        padding: 50px 30px;
+    }
+    .rgncro-modal__img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        object-position: center;
+        clip-path: unset;
+    }
+}
+
+
+/*NEW CRO AUGUST 07 2020*/
+
+
+/*NEW CRO AUGUST 07 2020*/
+
+
+/*NEW CRO AUGUST 07 2020*/
+
+
+/*NEW CRO AUGUST 07 2020*/
+
+.croSection {
+    display: none;
+    margin: 100px 0px 55px;
+}
+
+.croSection form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.croSection .emaillist form .es_caption {
+    display: none;
+}
+
+.croSection .es-field-wrap label {
+    margin-bottom: 0;
+    width: 100%;
+}
+
+.croSection .es-field-wrap br {
+    display: none;
+}
+
+.croSection .es-field-wrap {
+    width: 100%;
+    max-width: 300px;
+    background-color: white;
+    margin-right: 20px;
+    margin-bottom: 0;
+    height: 60px;
+}
+
+.croSection .croParentDiv {
+    background-image: url(https://reganindustrial.com/wp-content/themes/regan/assets/images/background-regan-cro.jpg);
+    background-attachment: fixed;
+    box-shadow: inset 1000px 1000px 0px 0px #a1102bcf;
+    padding: 50px 10px;
+    background-position: center;
+}
+
+.croSection .croParentDiv h3 {
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+
+.croSection .croParentDiv p {
+    color: white;
+    text-align: center;
+    line-height: 27.38px;
+    font-size: 18px;
+    width: 100%;
+    max-width: 579px;
+    margin: auto;
+}
+
+.croSection .rm_form_field.rm_button {
+    background-color: #ffcc00 !important;
+    color: white;
+    font-weight: normal;
+    font-family: var(--font-body);
+    text-transform: capitalize;
+    height: 60px;
+    width: 100%;
+    max-width: 200px;
+    font-size: 15px;
+}
+
+.croSection input {
+    height: 60px;
+    background-color: white;
+    border-radius: 0;
+    padding: 10px 18px;
+    font-weight: 500;
+}
+
+.croSection .rm_form_field.rm_button:hover {
+    background-color: #ffd63a !important;
+}
+
+.croSection .es_subscription_message.success {
+    color: white;
+    display: block;
+    font-size: 16px;
+    width: 100%;
+    max-width: 699px;
+    margin: auto;
+    text-align: center;
+    font-weight: bold;
+}
+
+.croSection .rm_form_field {
+    height: 60px;
+    background-color: white !important;
+    border-radius: 0 !important;
+    padding: 10px 18px !important;
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 991px) {
+    .croSection .es-field-wrap {
+        max-width: 190px;
+        height: 46px;
+    }
+    .croSection .rm_form_field {
+        height: 46px;
+    }
+    .croSection .rm_form_field.rm_button {
+        height: 46px;
+        max-width: 190px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .croSection form {
+        flex-wrap: wrap;
+    }
+    .croSection .es-field-wrap {
+        margin-right: 0px;
+        width: 100%;
+        margin-bottom: 12px;
+        max-width: 100%;
+    }
+    .croSection .rm_form_field.rm_button {
+        height: 46px;
+        max-width: 100%;
+    }
+    .croSection .croParentDiv {
+        padding: 50px 30px;
+    }
+}
+
+@media only screen and (max-width: 325px) {
+    .croSection .croParentDiv {
+        padding: 50px 15px;
+    }
+}
+
+.croSection form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: -37px;
+}
+
+.croSection form>div {
+    width: 100%;
+    max-width: 100%;
+}
+
+div#af-body-1732880265 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.af-element label {
+    display: none;
+}
+
+.af-textWrap input {
+    width: 100%;
+    max-width: 100% !important;
+    border-radius: 0 !important;
+    background-color: white !important;
+}
+
+.af-textWrap {
+    width: 100%;
+    max-width: 100%;
+}
+
+.af-element {
+    width: 100%;
+    max-width: 300px;
+    margin-right: 21px;
+}
+
+.af-element.buttonContainer {
+    margin-right: 0;
+    max-width: 200px;
+}
+
+.af-element.buttonContainer .submit {
+    background-color: #ffcc00;
+}
+
+.af-element.buttonContainer .submit {
+    background-color: #ffcc00;
+    font-size: 15px;
+    font-family: var(--font-body);
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+@media only screen and (max-width: 991px) {
+    .af-element {
+        width: 100%;
+        max-width: 194px;
+        margin-right: 21px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    div#af-body-1732880265 {
+        flex-wrap: wrap;
+    }
+    .croSection form {
+        margin-right: 0px;
+    }
+    .af-element {
+        width: 100%;
+        margin-right: 0;
+        max-width: 100% !important;
+        margin-bottom: 13px;
+    }
+    .af-element.buttonContainer .submit {
+        background-color: #ffcc00;
+        font-size: 15px;
+        font-family: var(--font-body);
+        font-weight: 500;
+        text-transform: capitalize;
+        max-width: 100% !important;
+        width: 100%;
+    }
+}
+
+
+/* === STICKY HEADER === */
+
+.crosticky {
+    background-color: #a1112a;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    z-index: 20;
+    width: 100%;
+}
+
+.crosticky__container {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.crosticky-info {
+    flex: 0 0 30%;
+    display: flex;
+    align-items: center;
+}
+
+.crosticky__p {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 !important;
+}
+
+.crosticky-form {
+    flex: 0 0 70%;
+}
+
+.crosticky-form .af-body {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.crosticky-form .af-element {
+    max-width: unset;
+    margin: 0;
+    flex: 0 0 40%;
+    padding: 0 5px;
+}
+
+.crosticky-form .buttonContainer {
+    flex: 0 0 20%;
+}
+
+.crosticky .crosticky-form input[type="text"],
+.crosticky .crosticky-form input[type="email"] {
+    border: 0;
+    background-color: #7b0e21 !important;
+    color: #fff;
+}
+
+.crosticky .crosticky-form input::placeholder {
+    color: #fff;
+}
+
+.crosticky .crosticky-form input[type="submit"] {
+    /* background-color: #00A651;
+    border: 1px solid #00A651; */
+    background-color: #ffcc00;
+    border: 1px solid #ffcc00;
+    outline: 0;
+    color: #fff;
+    font-size: 15px;
+    font-family: var(--font-body);
+    font-weight: 500;
+    text-transform: capitalize;
+    transition: all 0.4s;
+}
+
+.crosticky .crosticky-form input[type="submit"]:hover,
+.crosticky .crosticky-form input[type="submit"]:active,
+.crosticky .crosticky-form input[type="submit"]:focus {
+    background-color: transparent;
+    /* color: #00A651; */
+    color: #ffcc00;
+}
+
+.cromargin {
+    display: block;
+    margin-top: 0 !important;
+}
+
+@media only screen and (max-width: 991px) {
+    .crosticky__container {
+        flex-wrap: wrap;
+    }
+    .crosticky__div {
+        flex: 0 0 100%;
+    }
+    .crosticky-info {
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .crosticky-form .af-element {
+        margin-bottom: 10px;
+    }
+    .cromargin {
+        margin-top: 120px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .crosticky-form .af-body {
+        flex-wrap: wrap;
+    }
+    .crosticky-form .af-element {
+        flex: 0 0 100%;
+        max-width: 300px;
+    }
+    .cromargin {
+        margin-top: 230px;
+    }
+}
+
+
+/* === STICKY HEADER === */
+
+@media (max-width: 768px) {
+    .cromargin {
+        margin-top: 120px;
+    }
+}
+
+@media(max-width: 426px) {
+    .crosticky-form .af-body {
+        flex-wrap: wrap;
+    }
+    .crosticky-form .af-element {
+        flex: 0 0 50%;
+    }
+    .crosticky-form .buttonContainer {
+        flex: 0 0 100%;
+    }
+    .cromargin {
+        margin-top: 170px;
+    }
+}
+
+@media (max-width: 376px) {
+    .cromargin {
+        margin-top: 170px;
+    }
+}
+
+.cro-sticky-2 .crosticky-form input[type="submit"] {
+    background-color: #00A651;
+    border: 1px solid #00A651; 
+
+}
+
+.cro-sticky-2 .crosticky-form input[type="submit"]:hover,
+.cro-sticky-2 .crosticky-form input[type="submit"]:active,
+.cro-sticky-2 .crosticky-form input[type="submit"]:focus {
+    color: #00A651;
+}
